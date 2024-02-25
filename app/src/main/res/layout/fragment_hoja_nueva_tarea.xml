@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/hojaTarea"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HojaNuevaTarea"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tareaTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva tarea"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxStrokeColor="@color/darkblue"
+        app:hintTextColor="@color/blue"
+        app:cursorColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nombre" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:boxStrokeColor="@color/darkblue"
+        app:hintTextColor="@color/blue"
+        app:cursorColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Descripción">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTimerPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/design_default_color_on_primary"
+        app:icon="@drawable/time_24"
+        app:iconTint="@color/white"
+        android:text="Seleccionar hora"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGuadar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+
+        android:backgroundTint="@color/teal"
+        android:textColor="@color/design_default_color_on_primary"
+        app:icon="@drawable/save_24"
+        app:iconTint="@color/white"
+        android:text="Guardar"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/salmon"
+        android:textColor="@color/design_default_color_on_primary"
+        app:icon="@drawable/delete_24"
+        app:iconTint="@color/white"
+        android:text="Eliminar"/>
+</LinearLayout>
